@@ -2,10 +2,10 @@ import subprocess
 import json
 from pprint import pprint
 
-f = open("output", "w")
+f = open("flipkart_raw_data", "w")
 process = subprocess.call(['curl',  '-H', 'Fk-Affiliate-Id:shariffaz', '-H', 'Fk-Affiliate-Token:c569d5da22704c278e90af8226c42174', 'https://affiliate-api.flipkart.net/affiliate/search/json?query=iphone&resultCount=20'], stdout=f)
 
-with open('output') as data_file:
+with open('flipkart_raw_data') as data_file:
 	data = json.load(data_file)
 
 # pprint(data)
