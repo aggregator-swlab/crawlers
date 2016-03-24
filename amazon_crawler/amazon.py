@@ -37,7 +37,7 @@ for i in all_links:
 
 	print "Title : " + title
 	print "Price : " + price
-	print link
+	print "Link : " + link
 	print "Img Url : " + imgurl
 	print "Rating : " + rating
 	print "\n\n************************\n\n"
